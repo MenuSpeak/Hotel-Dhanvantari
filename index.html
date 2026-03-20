@@ -1198,10 +1198,14 @@
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="नाष्टा">☀️ Breakfast</button>
-<button class="tab" data-cat="जेवण">🍲 Meals / Dinner</button>
-<button class="tab" data-cat="कोल्डड्रिंक">🥤 Cold Drinks & Beverages</button>
-             </div>  
+<button class="tab" data-cat="नाश्ता">☀️ Breakfast & Snacks</button>
+<button class="tab" data-cat="व्हेज मेन कोर्स">🥦 Main Course (Veg)</button>
+<button class="tab" data-cat="राईस">🍚 Rice & Pulao</button>
+<button class="tab" data-cat="रोटी">🫓 Roti & Bhakri</button>
+<button class="tab" data-cat="थाळी">🍱 Thali Specials</button>
+<button class="tab" data-cat="डेअरी / स्वीट">🍦 Desserts & Dairy</button>
+<button class="tab" data-cat="पापड">🍘 Papad & Sides</button>
+              </div>  
                 </div>
             </div>
 
@@ -1345,10 +1349,100 @@
     <script>
         // Menu Data - FIXED VERSION
         const data = [
-          
-          
+{"id": 1, "cat": "नाश्ता", "name": "Kanda Bhaji | कांदा भजे", "price": "50/-", "desc": "Crispy fried onion fritters (1 Plate)", "tags": ["Veg", "Snacks"], "img": "img/kanda_bhaji.jpeg"},
+{"id": 2, "cat": "नाश्ता", "name": "Alu Bhaji | आलू भजे", "price": "50/-", "desc": "Crispy fried potato fritters (1 Plate)", "tags": ["Veg", "Snacks"], "img": "img/alu_bhaji.jpeg"},
+{"id": 3, "cat": "नाश्ता", "name": "Shira | शिरा", "price": "50/-", "desc": "Sweet semolina dessert (1 Plate)", "tags": ["Veg", "Breakfast"], "img": "img/shira.jpeg"},
+{"id": 4, "cat": "नाश्ता", "name": "Upma | उपमा", "price": "40/-", "desc": "Savory semolina porridge (1 Plate)", "tags": ["Veg", "Breakfast"], "img": "img/upma.jpeg"},
+{"id": 5, "cat": "नाश्ता", "name": "Kanda Poha | कांदा पोहे", "price": "30/-", "desc": "Flattened rice cooked with onions (1 Plate)", "tags": ["Veg", "Breakfast"], "img": "img/poha.jpeg"},
+{"id": 6, "cat": "नाश्ता", "name": "Paneer Pakoda | पनीर पकोडा", "price": "80/-", "desc": "Spiced cottage cheese fritters (1 Plate)", "tags": ["Veg", "Snacks"], "img": "img/paneer_pakoda.jpeg"},
+{"id": 7, "cat": "नाश्ता", "name": "Bread Pakoda | ब्रेड पकोडा", "price": "50/-", "desc": "Stuffed fried bread fritters (1 Plate)", "tags": ["Veg", "Snacks"], "img": "img/bread_pakoda.jpeg"},
+{"id": 8, "cat": "नाश्ता", "name": "Alu Vada | आलू वडा", "price": "50/-", "desc": "Spicy potato dumplings (1 Plate)", "tags": ["Veg", "Snacks"], "img": "img/alu_vada.jpeg"},
+{"id": 9, "cat": "डेअरी / स्वीट", "name": "Dahi | दही", "price": "30/-", "desc": "Fresh yogurt (1 Wati)", "tags": ["Veg", "Dairy"], "img": "img/dahi.jpeg"},
+{"id": 10, "cat": "डेअरी / स्वीट", "name": "Matha | मट्ठा", "price": "20/-", "desc": "Refreshing spiced buttermilk (1 Glass)", "tags": ["Veg", "Dairy"], "img": "img/matha.jpeg"},
+{"id": 11, "cat": "डेअरी / स्वीट", "name": "Basundi | बासुंदी", "price": "50/-", "desc": "Sweet thickened milk dessert (1 Plate)", "tags": ["Veg", "Dessert"], "img": "img/basundi.jpeg"},
+{"id": 12, "cat": "डेअरी / स्वीट", "name": "Shrikhand | श्रीखंड", "price": "50/-", "desc": "Sweetened strained yogurt (1 Plate)", "tags": ["Veg", "Dessert"], "img": "img/shrikhand.jpeg"},
+{"id": 13, "cat": "डेअरी / स्वीट", "name": "Cold Drink | कोल्डड्रींक", "price": "", "desc": "Assorted cold beverages", "tags": ["Veg", "Beverages"], "img": "img/cold_drink.jpeg"},
+{"id": 14, "cat": "पापड", "name": "Sadha Papad | साधा पापड", "price": "10/-", "desc": "Roasted or fried plain papadum", "tags": ["Veg", "Side Dish"], "img": "img/sadha_papad.jpeg"},
+{"id": 15, "cat": "पापड", "name": "Nagli Papad Masala | नागली पापड मसाला", "price": "30/-", "desc": "Ragi papad with spicy toppings", "tags": ["Veg", "Side Dish"], "img": "img/nagli_masala_papad.jpeg"},
+{"id": 16, "cat": "राईस", "name": "Sadha Rice | साधा राईस", "price": "80/-", "desc": "Plain steamed rice", "tags": ["Veg", "Rice"], "img": "img/plain_rice.jpeg"},
+{"id": 17, "cat": "राईस", "name": "Jeera Rice | जिरा राईस", "price": "100/-", "desc": "Cumin flavored aromatic rice", "tags": ["Veg", "Rice"], "img": "img/jeera_rice.jpeg"},
+{"id": 18, "cat": "राईस", "name": "Jeera Garlic Rice | जिरा गार्लिक राईस", "price": "120/-", "desc": "Rice flavored with garlic and cumin", "tags": ["Veg", "Rice"], "img": "img/jeera_garlic_rice.jpeg"},
+{"id": 19, "cat": "राईस", "name": "Dal Rice | दाल राईस", "price": "120/-", "desc": "Lentils served with steamed rice", "tags": ["Veg", "Rice"], "img": "img/dal_rice.jpeg"},
+{"id": 20, "cat": "राईस", "name": "Dahi Rice | दही राईस", "price": "120/-", "desc": "Creamy curd rice with tempering", "tags": ["Veg", "Rice"], "img": "img/curd_rice.jpeg"},
+{"id": 21, "cat": "राईस", "name": "Veg Pulao | व्हेज पुलाव", "price": "150/-", "desc": "Spiced rice with mixed vegetables", "tags": ["Veg", "Rice"], "img": "img/veg_pulao.jpeg"},
+{"id": 22, "cat": "रोटी", "name": "Sada Roti | सदा रोटी", "price": "10/-", "desc": "Simple handmade flatbread", "tags": ["Veg", "Roti"], "img": "img/sada_roti.jpeg"},
+{"id": 23, "cat": "रोटी", "name": "Sada Paratha | सदा पराठा", "price": "20/-", "desc": "Plain layered flatbread", "tags": ["Veg", "Roti"], "img": "img/sada_paratha.jpeg"},
+{"id": 24, "cat": "रोटी", "name": "Butter Roti | बटर रोटी", "price": "15/-", "desc": "Handmade flatbread with butter", "tags": ["Veg", "Roti"], "img": "img/butter_roti.jpeg"},
+{"id": 25, "cat": "रोटी", "name": "Bajra Roti | बाजरी रोटी", "price": "25/-", "desc": "Pearl millet flatbread", "tags": ["Veg", "Roti"], "img": "img/bajra_roti.jpeg"},
+{"id": 26, "cat": "रोटी", "name": "Jwar Roti | ज्वारी रोटी", "price": "25/-", "desc": "Sorghum flatbread", "tags": ["Veg", "Roti"], "img": "img/jwar_roti.jpeg"},
+{"id": 27, "cat": "रोटी", "name": "Maka Roti | मका रोटी", "price": "20/-", "desc": "Maize/Corn flatbread", "tags": ["Veg", "Roti"], "img": "img/maka_roti.jpeg"},
+{"id": 28, "cat": "थाळी", "name": "Rice Plate | राईस प्लेट", "price": "200/-", "desc": "Dahi, Papad, Varan, 4 Roti, 2 Bhaji, Rice", "tags": ["Veg", "Thali"], "img": "img/rice_plate.jpeg"},
+{"id": 29, "cat": "विशेष थाळी", "name": "Unlimited Thali | अनलिमिटेड ताट", "price": "200/-", "desc": "Shevga/Bharli Bhaji + Bhakri/Roti + Sandge + Varan Bhat + Bhaji (Unlimited)", "tags": ["Veg", "Thali", "Special"], "img": "img/unlimited_thali.jpeg"},  
+
+{"id": 30, "cat": "व्हेज मेन कोर्स", "name": "Dal Fry | डाळ फ्राय", "price": "110/-", "desc": "Yellow lentils tempered with spices", "tags": ["Veg", "Main Course"], "img": "img/dal_fry.jpeg"},
+{"id": 31, "cat": "व्हेज मेन कोर्स", "name": "Dal Tadka | दाल तडका", "price": "130/-", "desc": "Lentils with a spicy garlic tempering", "tags": ["Veg", "Main Course"], "img": "img/dal_tadka.jpeg"},
+{"id": 32, "cat": "व्हेज मेन कोर्स", "name": "Dal Moglai | दाल मोगलाई", "price": "110/-", "desc": "Rich and creamy Mughlai style lentils", "tags": ["Veg", "Main Course"], "img": "img/dal_moglai.jpeg"},
+{"id": 33, "cat": "व्हेज मेन कोर्स", "name": "Gobi Masala | गोबी मसाला", "price": "120/-", "desc": "Cauliflower cooked in spicy masala", "tags": ["Veg", "Main Course"], "img": "img/gobi_masala.jpeg"},
+{"id": 34, "cat": "व्हेज मेन कोर्स", "name": "Alu Gobi | आलू कोबी", "price": "120/-", "desc": "Classic potato and cauliflower stir-fry", "tags": ["Veg", "Main Course"], "img": "img/alu_gobi.jpeg"},
+{"id": 35, "cat": "व्हेज मेन कोर्स", "name": "Gobi Tomato | गोबी टमाटर", "price": "110/-", "desc": "Cauliflower cooked with tangy tomatoes", "tags": ["Veg", "Main Course"], "img": "img/gobi_tomato.jpeg"},
+{"id": 36, "cat": "व्हेज मेन कोर्स", "name": "Alu Palak | आलू पालक", "price": "110/-", "desc": "Potatoes in a smooth spinach gravy", "tags": ["Veg", "Main Course"], "img": "img/alu_palak.jpeg"},
+{"id": 37, "cat": "व्हेज मेन कोर्स", "name": "Gobi Mutter | गोबी मटर", "price": "120/-", "desc": "Cauliflower and green peas curry", "tags": ["Veg", "Main Course"], "img": "img/gobi_mutter.jpeg"},
+{"id": 38, "cat": "व्हेज मेन कोर्स", "name": "Dum Alu | दम आलू", "price": "130/-", "desc": "Slow-cooked spiced potatoes in gravy", "tags": ["Veg", "Main Course"], "img": "img/dum_alu.jpeg"},
+{"id": 39, "cat": "व्हेज मेन कोर्स", "name": "Alu Masala | आलू मसाला", "price": "110/-", "desc": "Potatoes tossed in spicy onion-tomato masala", "tags": ["Veg", "Main Course"], "img": "img/alu_masala.jpeg"},
+{"id": 40, "cat": "व्हेज मेन कोर्स", "name": "Shevga Masala | शेवगा मसाला", "price": "120/-", "desc": "Drumsticks in a spicy Maharashtrian gravy", "tags": ["Veg", "Main Course"], "img": "img/shevga_masala.jpeg"},
+{"id": 41, "cat": "व्हेज मेन कोर्स", "name": "Bhendi Masala | भेंडी मसाला", "price": "120/-", "desc": "Okra cooked with spices and onions", "tags": ["Veg", "Main Course"], "img": "img/bhendi_masala.jpeg"},
+{"id": 42, "cat": "व्हेज मेन कोर्स", "name": "Alu Chatni | आलू चटणी", "price": "100/-", "desc": "Spicy mashed potato preparation", "tags": ["Veg", "Main Course"], "img": "img/alu_chatni.jpeg"},
+{"id": 43, "cat": "व्हेज मेन कोर्स", "name": "Tomato Chatni | टमाटर चटणी", "price": "100/-", "desc": "Tangy tomato based side dish", "tags": ["Veg", "Main Course"], "img": "img/tomato_chatni.jpeg"},
+{"id": 44, "cat": "व्हेज मेन कोर्स", "name": "Mix Veg | मिक्स व्हेज", "price": "150/-", "desc": "Assorted vegetables in a spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/mix_veg.jpeg"},
+{"id": 45, "cat": "व्हेज मेन कोर्स", "name": "Palak Paneer | पालक पनीर", "price": "150/-", "desc": "Cottage cheese cubes in spinach puree", "tags": ["Veg", "Main Course"], "img": "img/palak_paneer.jpeg"},
+{"id": 46, "cat": "व्हेज मेन कोर्स", "name": "Paneer Masala | पनीर मसाला", "price": "200/-", "desc": "Paneer cubes in a thick spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/paneer_masala.jpeg"},
+{"id": 47, "cat": "व्हेज मेन कोर्स", "name": "Paneer Bhurji | पनीर भुर्जी", "price": "200/-", "desc": "Scrambled spiced cottage cheese", "tags": ["Veg", "Main Course"], "img": "img/paneer_bhurji.jpeg"},
+{"id": 48, "cat": "व्हेज मेन कोर्स", "name": "Paneer Kari | पनीर करी", "price": "180/-", "desc": "Cottage cheese in a thin spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/paneer_kari.jpeg"},
+{"id": 49, "cat": "व्हेज मेन कोर्स", "name": "Kaju Paneer | काजू पनीर", "price": "200/-", "desc": "Rich blend of cashews and paneer", "tags": ["Veg", "Main Course"], "img": "img/kaju_paneer.jpeg"},
+{"id": 50, "cat": "व्हेज मेन कोर्स", "name": "Kaju Kari | काजू करी", "price": "200/-", "desc": "Cashews cooked in a creamy gravy", "tags": ["Veg", "Main Course"], "img": "img/kaju_kari.jpeg"},
+{"id": 51, "cat": "व्हेज मेन कोर्स", "name": "Kaju Masala | काजू मसाला", "price": "180/-", "desc": "Roasted cashews in spicy masala", "tags": ["Veg", "Main Course"], "img": "img/kaju_masala.jpeg"},
+{"id": 52, "cat": "व्हेज मेन कोर्स", "name": "Mushroom Kari | मशरूम करी", "price": "200/-", "desc": "Fresh mushrooms in a spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/mushroom_kari.jpeg"},
+{"id": 53, "cat": "व्हेज मेन कोर्स", "name": "Mushroom Masala | मशरूम मसाला", "price": "180/-", "desc": "Mushrooms cooked with onion-tomato masala", "tags": ["Veg", "Main Course"], "img": "img/mushroom_masala.jpeg"},
+{"id": 54, "cat": "व्हेज मेन कोर्स", "name": "Patodi Bhaji | पातोडी भाजी", "price": "150/-", "desc": "Traditional gram flour cakes in spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/patodi_bhaji.jpeg"},
+{"id": 55, "cat": "व्हेज मेन कोर्स", "name": "Shev Bhaji | शेव भाजी", "price": "110/-", "desc": "Spicy gravy topped with crunchy sev", "tags": ["Veg", "Main Course"], "img": "img/shev_bhaji.jpeg"},
+{"id": 56, "cat": "व्हेज मेन कोर्स", "name": "Shev Tomato | शेव टमाटर", "price": "110/-", "desc": "Sev curry with a tangy tomato base", "tags": ["Veg", "Main Course"], "img": "img/shev_tomato.jpeg"},
+{"id": 57, "cat": "व्हेज मेन कोर्स", "name": "Soya Bin Lapeta | सोया बिन लपेटा", "price": "130/-", "desc": "Soy chunks coated in thick masala", "tags": ["Veg", "Main Course"], "img": "img/soya_lapeta.jpeg"},
+{"id": 58, "cat": "व्हेज मेन कोर्स", "name": "Soyabean Kari | सोयाबिन करी", "price": "110/-", "desc": "Soy chunks in a spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/soya_kari.jpeg"},
+{"id": 59, "cat": "व्हेज मेन कोर्स", "name": "Veg Anda Kari | व्हेज अंडाकरी", "price": "160/-", "desc": "Vegetarian version of egg curry", "tags": ["Veg", "Main Course"], "img": "img/veg_anda_kari.jpeg"},
+{"id": 60, "cat": "व्हेज मेन कोर्स", "name": "Veg Kofta | व्हेज कोफ्ता", "price": "180/-", "desc": "Vegetable dumplings in a rich gravy", "tags": ["Veg", "Main Course"], "img": "img/veg_kofta.jpeg"},
+{"id": 61, "cat": "व्हेज मेन कोर्स", "name": "Shev Dudh Bhaji | शेव दूध भाजी", "price": "180/-", "desc": "Sev curry prepared in a milk-based gravy", "tags": ["Veg", "Main Course"], "img": "img/shev_dudh_bhaji.jpeg"},
+{"id": 62, "cat": "व्हेज मेन कोर्स", "name": "Khandoli Full Handi | खांडोळी फुल हंडी", "price": "800/-", "desc": "House special veg handi (Full)", "tags": ["Veg", "Main Course"], "img": "img/khandoli_full.jpeg"},
+{"id": 63, "cat": "व्हेज मेन कोर्स", "name": "Khandoli Half Handi | खांडोळी हाफ हंडी", "price": "450/-", "desc": "House special veg handi (Half)", "tags": ["Veg", "Main Course"], "img": "img/khandoli_half.jpeg"},
+{"id": 64, "cat": "व्हेज मेन कोर्स", "name": "Baigan Masala | बैगन मसाला", "price": "120/-", "desc": "Eggplant cooked in spicy masala", "tags": ["Veg", "Main Course"], "img": "img/baigan_masala.jpeg"},
+{"id": 65, "cat": "व्हेज मेन कोर्स", "name": "Baigan Bharta | बैगन भर्ता", "price": "100/-", "desc": "Smoky mashed eggplant with spices", "tags": ["Veg", "Main Course"], "img": "img/baigan_bharta.jpeg"},
+{"id": 66, "cat": "व्हेज मेन कोर्स", "name": "Alu Baigan | आलू बैगन", "price": "110/-", "desc": "Potato and eggplant stir-fry", "tags": ["Veg", "Main Course"], "img": "img/alu_baigan.jpeg"},
+{"id": 67, "cat": "व्हेज मेन कोर्स", "name": "Chana Lapeta | चना लपेटा", "price": "130/-", "desc": "Chickpeas coated in thick spicy masala", "tags": ["Veg", "Main Course"], "img": "img/chana_lapeta.jpeg"},
+{"id": 68, "cat": "व्हेज मेन कोर्स", "name": "Chana Masala | चना मसाला", "price": "110/-", "desc": "Spiced chickpeas in onion-tomato gravy", "tags": ["Veg", "Main Course"], "img": "img/chana_masala.jpeg"},
+{"id": 69, "cat": "व्हेज मेन कोर्स", "name": "Matki Fry | मटकी फ्राय", "price": "100/-", "desc": "Sautéed moth beans with spices", "tags": ["Veg", "Main Course"], "img": "img/matki_fry.jpeg"},
+{"id": 70, "cat": "व्हेज मेन कोर्स", "name": "Matki Masala | मटकी मसाला", "price": "110/-", "desc": "Moth beans cooked in spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/matki_masala.jpeg"},
+{"id": 71, "cat": "व्हेज मेन कोर्स", "name": "Matki Kari | मटकी कडी", "price": "120/-", "desc": "Moth beans in a tangy yogurt based gravy", "tags": ["Veg", "Main Course"], "img": "img/matki_kari.jpeg"},
+{"id": 72, "cat": "व्हेज मेन कोर्स", "name": "Paneer Mutter | पनीर मटर", "price": "150/-", "desc": "Paneer and green peas curry", "tags": ["Veg", "Main Course"], "img": "img/paneer_mutter.jpeg"},
+{"id": 73, "cat": "व्हेज मेन कोर्स", "name": "Gobi Mutter | गोबी मटर", "price": "130/-", "desc": "Cauliflower and green peas masala", "tags": ["Veg", "Main Course"], "img": "img/gobi_mutter_2.jpeg"},
+{"id": 74, "cat": "व्हेज मेन कोर्स", "name": "Alu Mutter | आलू मटर", "price": "130/-", "desc": "Potato and green peas masala", "tags": ["Veg", "Main Course"], "img": "img/alu_mutter.jpeg"},
+{"id": 75, "cat": "व्हेज मेन कोर्स", "name": "Besan | बेसन", "price": "100/-", "desc": "Traditional gram flour dish (Pithla)", "tags": ["Veg", "Main Course"], "img": "img/besan.jpeg"},
+{"id": 76, "cat": "व्हेज मेन कोर्स", "name": "Dahi Tadka | दही तडका", "price": "70/-", "desc": "Tempered yogurt with spices", "tags": ["Veg", "Main Course"], "img": "img/dahi_tadka.jpeg"},
+{"id": 77, "cat": "व्हेज मेन कोर्स", "name": "Karela Sukha | कारले सुखा", "price": "120/-", "desc": "Bitter gourd dry fry with spices", "tags": ["Veg", "Main Course"], "img": "img/karela_sukha.jpeg"},
+{"id": 78, "cat": "व्हेज मेन कोर्स", "name": "Fanas Masala | फणस मसाला", "price": "150/-", "desc": "Jackfruit cooked in spicy masala", "tags": ["Veg", "Main Course"], "img": "img/fanas_masala.jpeg"},
+
+              
 
 
+
+
+
+
+
+
+
+
+
+
+              
 
 
           
